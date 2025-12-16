@@ -43,7 +43,7 @@ const BackgroundMusicToggle = () => {
       {/* Hidden audio element - replace src with your romantic background music */}
       <audio
         ref={audioRef}
-        src="./../public/audio/2.mp3" // Add your background music URL here
+        src="/audio/2.mp3" // Add your background music URL here
         preload="auto"
       />
 
