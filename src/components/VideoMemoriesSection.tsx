@@ -23,8 +23,8 @@ const videos: Video[] = [
  },
   {
     id: 3,
-    title: 'የፍቅር ምግልጫ', 
-    description: 'Celebrating our love through shared experiences',
+    title: 'የፍቅር መግልጫ - may be laysera yichilal', 
+    description: 'Our love story told through cherished videos',
     videoUrl: '/videos/3.mp4', // Points to public/videos/3.mp4
   },
   

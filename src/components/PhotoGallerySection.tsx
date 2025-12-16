@@ -13,24 +13,24 @@ const photos: Photo[] = [
     id: 1,
     src: '/images/1.jpg',
     caption: 'Our first sunset together-አብረን እንደምንሆን እንኳን አናውቅም ነበር',
-    date: 'That magical evening',
+    date: 'That magical Day',
   },
   {
     id: 2,
     src: '/images/2.jpg',
-    caption: 'ስታቅፊኝ ያለሽ ፍቅር-You stole my heart',
+    caption: 'ስታቅፊኝ ያለው ስሜት- I still remember',
     date: 'A day to remember',
   },
   {
     id: 3,
     src: '/images/3.jpg',
-    caption: 'smiling with you',
+    caption: 'smiling with you- i love this Photo ማርያምን',
     date: 'Every day is an adventure',
   },
   {
     id: 4,
     src: '/images/4.jpg',
-    caption: 'Your beautiful smile',
+    caption: 'Your beautiful smile-ዪቺን ደሞ አንቺ ትወጃታለሽ',
     date: 'My favorite view',
   },
   {
@@ -42,7 +42,7 @@ const photos: Photo[] = [
   {
     id: 6,
     src: '/images/11.jpg',
-    caption: 'The way i see you',
+    caption: 'The way i see you - ጠብ እኮነው ያልኩልሽ ማርያምን',
     date: 'Together forever',
   },
     {
@@ -54,7 +54,7 @@ const photos: Photo[] = [
     {
     id: 8,
     src: '/images/8.jpg',
-    caption: 'Hand in hand, always',
+    caption: 'የዚቀን ነገር ድሞ አይወራ',
     date: 'Together forever',
   },
     {

@@ -32,7 +32,7 @@ const FooterSection = () => {
         <p className="font-body text-sm text-muted-foreground">
           Made with{' '}
           <Heart className="w-3 h-3 inline text-rose-gold fill-rose-gold" />{' '}
-          just for you
+          ላንቺ
         </p>
         <p className="font-body text-xs text-muted-foreground/60 mt-2">
           © {currentYear} — Our Love Story

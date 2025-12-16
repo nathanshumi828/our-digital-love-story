@@ -18,14 +18,14 @@ const songs: Song[] = [
     artist: ' ማስተዋል እያዩ',
     memory: " makes me think of the moment how you came in to my life.",
     audioSrc: '/audio/3.mp3', // Pointing to public/audio/2.mp3
-    coverArt: './../public/images/8.jpg',
+    coverArt: '/images/8.jpg',
   },
   {
     id: 2,
     title: 'ስወድሽ',
     artist: 'ሚካኤል በላይነህ',
     memory: 'The song that express my feelings for you.',
-    coverArt: './../public/images/8.jpg',
+    coverArt: '/images/8.jpg',
     audioSrc: '/audio/1.mp3', // Pointing to public/audio/1.mp3
   },
 
@@ -35,7 +35,7 @@ const songs: Song[] = [
     artist: 'ጎሳዬ ተስፋዬ',
     memory: 'ጋበዝኩሽ',
    audioSrc: '/audio/4.mp3', // Pointing to public/audio/4.mp3
-    coverArt: './../public/images/8.jpg',
+    coverArt: '/images/8.jpg',
   },
 ];
 
