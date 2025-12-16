@@ -1,12 +1,36 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Navigation from '@/components/Navigation';
+import HeroSection from '@/components/HeroSection';
+import LoveLetterSection from '@/components/LoveLetterSection';
+import PhotoGallerySection from '@/components/PhotoGallerySection';
+import VideoMemoriesSection from '@/components/VideoMemoriesSection';
+import VoiceMessagesSection from '@/components/VoiceMessagesSection';
+import MusicSection from '@/components/MusicSection';
+import FooterSection from '@/components/FooterSection';
+import FloatingHearts from '@/components/FloatingHearts';
+import BackgroundMusicToggle from '@/components/BackgroundMusicToggle';
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-background overflow-x-hidden">
+      {/* Floating hearts background effect */}
+      <FloatingHearts />
+      
+      {/* Navigation */}
+      <Navigation />
+      
+      {/* Main content */}
+      <main>
+        <HeroSection />
+        <LoveLetterSection />
+        <PhotoGallerySection />
+        <VideoMemoriesSection />
+        <VoiceMessagesSection />
+        <MusicSection />
+        <FooterSection />
+      </main>
+
+      {/* Background music toggle */}
+      <BackgroundMusicToggle />
     </div>
   );
 };
