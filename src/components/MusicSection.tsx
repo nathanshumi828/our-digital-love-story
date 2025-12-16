@@ -6,8 +6,7 @@ interface Song {
   title: string;
   artist: string;
   memory: string;
-  spotifyUrl?: string; // Optional if you have local audio
-  coverArt: string;
+ spotifyUrl?: string; // Optional if you have local audio
   audioSrc?: string;   // Path to your local mp3
 }
 
@@ -18,14 +17,12 @@ const songs: Song[] = [
     artist: ' ማስተዋል እያዩ',
     memory: " makes me think of the moment how you came in to my life.",
     audioSrc: '/audio/3.mp3', // Pointing to public/audio/2.mp3
-    coverArt: '/images/8.jpg',
   },
   {
     id: 2,
     title: 'ስወድሽ',
     artist: 'ሚካኤል በላይነህ',
     memory: 'The song that express my feelings for you.',
-    coverArt: '/images/8.jpg',
     audioSrc: '/audio/1.mp3', // Pointing to public/audio/1.mp3
   },
 
@@ -35,7 +32,7 @@ const songs: Song[] = [
     artist: 'ጎሳዬ ተስፋዬ',
     memory: 'ጋበዝኩሽ',
    audioSrc: '/audio/4.mp3', // Pointing to public/audio/4.mp3
-    coverArt: '/images/8.jpg',
+    
   },
 ];
 
@@ -90,11 +87,7 @@ const MusicSection = () => {
             >
               <div className="flex items-center gap-4 p-4">
                 <div className="relative w-20 h-20 rounded-lg overflow-hidden flex-shrink-0">
-                  <img
-                    src={song.coverArt}
-                    alt={song.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
+                 
                   
                   {/* Play Button Overlay for local audio */}
                   {song.audioSrc && (
