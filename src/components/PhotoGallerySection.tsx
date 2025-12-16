@@ -11,38 +11,62 @@ interface Photo {
 const photos: Photo[] = [
   {
     id: 1,
-    src: 'https://images.unsplash.com/photo-1518568814500-bf0f8d125f46?w=600&h=400&fit=crop',
-    caption: 'Our first sunset together',
+    src: './../public/images/1.jpg',
+    caption: 'Our first sunset together-አብረን እንደምንሆን እንኳን አናውቅም ነበር',
     date: 'That magical evening',
   },
   {
     id: 2,
-    src: 'https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?w=600&h=400&fit=crop',
-    caption: 'Dancing under the stars',
-    date: 'A night to remember',
+    src: './../public/images/2.jpg',
+    caption: 'ስታቅፊኝ ያለሽ ፍቅር-You stole my heart',
+    date: 'A day to remember',
   },
   {
     id: 3,
-    src: 'https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=600&h=400&fit=crop',
-    caption: 'Adventures with you',
+    src: './../public/images/3.jpg',
+    caption: 'smiling with you',
     date: 'Every day is an adventure',
   },
   {
     id: 4,
-    src: 'https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=600&h=400&fit=crop',
+    src: './../public/images/4.jpg',
     caption: 'Your beautiful smile',
     date: 'My favorite view',
   },
   {
     id: 5,
-    src: 'https://images.unsplash.com/photo-1545232979-8bf68ee9b1af?w=600&h=400&fit=crop',
-    caption: 'Coffee dates with you',
+    src: './../public/images/5.jpg',
+    caption: 'First ጉዞ with you',
     date: 'Simple joys',
   },
   {
     id: 6,
-    src: 'https://images.unsplash.com/photo-1474552226712-ac0f0961a954?w=600&h=400&fit=crop',
+    src: './../public/images/11.jpg',
+    caption: 'The way i see you',
+    date: 'Together forever',
+  },
+    {
+    id: 7,
+    src: './../public/images/7.jpg',
+    caption: 'This Day, This Moment',
+    date: 'Together forever',
+  },
+    {
+    id: 8,
+    src: './../public/images/8.jpg',
     caption: 'Hand in hand, always',
+    date: 'Together forever',
+  },
+    {
+    id: 9,
+    src: './../public/images/9.jpg',
+    caption: 'Hand in hand, always',
+    date: 'Together forever',
+  },
+    {
+    id: 10,
+    src: './../public/images/10.jpg',
+    caption: 'I always think of you , always',
     date: 'Together forever',
   },
 ];
@@ -105,7 +129,7 @@ const PhotoGallerySection = () => {
             className="absolute top-6 right-6 text-primary-foreground hover:text-rose-gold transition-colors"
             onClick={() => setSelectedPhoto(null)}
           >
-            <X className="w-8 h-8" />
+            <X className="w-5 h-5" />
           </button>
           
           <div className="max-w-4xl w-full" onClick={(e) => e.stopPropagation()}>

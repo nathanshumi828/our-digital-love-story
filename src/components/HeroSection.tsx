@@ -28,7 +28,7 @@ const HeroSection = () => {
         {/* Main heading */}
         <div className="mb-6 animate-fade-in-up">
           <span className="text-lg md:text-xl font-elegant text-muted-foreground tracking-widest uppercase">
-            A Digital Love Story
+            Happy anniversary
           </span>
         </div>
 

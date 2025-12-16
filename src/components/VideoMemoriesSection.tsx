@@ -4,25 +4,30 @@ interface Video {
   id: number;
   title: string;
   description: string;
-  embedUrl: string;
-  thumbnail: string;
+  videoUrl: string; // Changed from embedUrl to videoUrl
+ 
 }
 
 const videos: Video[] = [
   {
     id: 1,
-    title: 'Our Love Story',
+    title: 'ስቴዲየም ስንምሳሰጥ',
     description: 'A collection of our most precious moments together',
-    embedUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    thumbnail: 'https://images.unsplash.com/photo-1529634597503-139d3726fed5?w=800&h=450&fit=crop',
+    videoUrl: '/videos/1.mp4', // Points to public/videos/1.mp4
   },
   {
     id: 2,
-    title: 'Adventures Together',
+    title: 'ከ exam መልስ',
     description: 'Every journey is better with you by my side',
-    embedUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ',
-    thumbnail: 'https://images.unsplash.com/photo-1522512115668-c09775d6f424?w=800&h=450&fit=crop',
+    videoUrl: '/videos/2.mp4', // Points to public/videos/2.mp4
+ },
+  {
+    id: 3,
+    title: 'የፍቅር ምግልጫ', 
+    description: 'Celebrating our love through shared experiences',
+    videoUrl: '/videos/3.mp4', // Points to public/videos/3.mp4
   },
+  
 ];
 
 const VideoMemoriesSection = () => {
@@ -49,36 +54,40 @@ const VideoMemoriesSection = () => {
           {videos.map((video) => (
             <div
               key={video.id}
-              className="group relative bg-card rounded-xl overflow-hidden shadow-romantic transition-all duration-500 hover:shadow-glow"
+              className="group relative bg-card rounded-xl overflow-hidden shadow-romantic transition-all duration-500 hover:shadow-glow border border-border/30"
             >
-              {/* Video container with cinematic aspect ratio */}
-              <div className="relative aspect-video bg-wine/10">
-                <iframe
-                  src={video.embedUrl}
-                  title={video.title}
-                  className="absolute inset-0 w-full h-full"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                />
+              {/* Native Video Player */}
+              <div className="relative aspect-video bg-black">
+                <video
+                  src={video.videoUrl}
+                 
+                  controls
+                  className="w-full h-full object-contain"
+                  playsInline
+                >
+                  Your browser does not support the video tag.
+                </video>
               </div>
               
               {/* Video info */}
               <div className="p-6 border-t border-border/50">
                 <div className="flex items-center gap-3 mb-2">
                   <div className="w-8 h-8 rounded-full bg-rose-gold/10 flex items-center justify-center">
-                    <Play className="w-4 h-4 text-rose-gold" />
+                    <Play className="w-4 h-4 text-rose-gold fill-rose-gold" />
                   </div>
                   <h3 className="font-elegant text-xl text-foreground">{video.title}</h3>
                 </div>
-                <p className="font-body text-muted-foreground">{video.description}</p>
+                <p className="font-body text-muted-foreground text-sm">{video.description}</p>
               </div>
+
+              {/* Animated subtle border on hover */}
+              <div className="absolute inset-0 border-2 border-rose-gold/0 group-hover:border-rose-gold/10 rounded-xl pointer-events-none transition-colors" />
             </div>
           ))}
         </div>
 
-        {/* Add more videos hint */}
         <p className="text-center mt-12 font-elegant text-muted-foreground italic">
-          Replace these with your own precious video memories
+          Cherishing every frame of our journey
         </p>
       </div>
     </section>

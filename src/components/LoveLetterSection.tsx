@@ -11,7 +11,7 @@ const LoveLetterSection = () => {
         <div className="text-center mb-16">
           <Feather className="w-8 h-8 text-rose-gold mx-auto mb-4 animate-float-slow" />
           <h2 className="font-script text-5xl md:text-6xl text-gradient-gold mb-4">
-            My Dearest
+            የኔእናት
           </h2>
           <div className="w-32 h-px bg-gradient-to-r from-transparent via-rose-gold to-transparent mx-auto" />
         </div>
@@ -56,7 +56,9 @@ const LoveLetterSection = () => {
 
             <p className="text-right font-elegant text-xl italic text-rose-gold mt-8">
               Forever Yours,<br />
-              <span className="font-script text-3xl">With All My Love</span>
+              <span className="font-script text-3xl">With All My Love</span><br />
+              <span className="font-script text-3xl">ሳሬም</span>
+              
             </p>
           </div>
 

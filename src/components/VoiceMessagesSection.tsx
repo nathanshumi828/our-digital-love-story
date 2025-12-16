@@ -12,31 +12,10 @@ interface VoiceMessage {
 const voiceMessages: VoiceMessage[] = [
   {
     id: 1,
-    title: 'Good Morning, My Love',
+    title: 'ናፍቆት ትረካ',
     description: 'A sweet message to start your day',
-    duration: '0:45',
-    audioUrl: '', // Add your audio URL here
-  },
-  {
-    id: 2,
-    title: 'I Miss You',
-    description: 'When distance keeps us apart',
-    duration: '1:20',
-    audioUrl: '',
-  },
-  {
-    id: 3,
-    title: 'Why I Love You',
-    description: 'A thousand reasons, spoken from my heart',
-    duration: '2:30',
-    audioUrl: '',
-  },
-  {
-    id: 4,
-    title: 'Our Song',
-    description: 'Me humming our favorite melody',
-    duration: '0:55',
-    audioUrl: '',
+    duration: '6:12',
+    audioUrl: '/audio/5.mp3', // Add your audio URL here
   },
 ];
 
@@ -69,9 +48,9 @@ const VoiceMessageCard = ({ message }: { message: VoiceMessage }) => {
           className="relative w-16 h-16 rounded-full bg-gradient-to-br from-rose-gold to-burgundy flex items-center justify-center shadow-glow transition-transform duration-300 hover:scale-110"
         >
           {isPlaying ? (
-            <Pause className="w-6 h-6 text-primary-foreground" />
+            <Pause className="w-6 h-6 text-white" />
           ) : (
-            <Play className="w-6 h-6 text-primary-foreground ml-1" />
+            <Play className="w-6 h-6 text-white ml-1" />
           )}
           
           {/* Animated ring when playing */}
@@ -85,7 +64,7 @@ const VoiceMessageCard = ({ message }: { message: VoiceMessage }) => {
           <h3 className="font-elegant text-xl text-foreground mb-1">{message.title}</h3>
           <p className="font-body text-sm text-muted-foreground mb-2">{message.description}</p>
           
-          {/* Waveform visualization (decorative) */}
+          {/* Waveform visualization */}
           <div className="flex items-center gap-1 h-4">
             {[...Array(20)].map((_, i) => (
               <div
@@ -94,7 +73,7 @@ const VoiceMessageCard = ({ message }: { message: VoiceMessage }) => {
                   isPlaying ? 'animate-pulse' : ''
                 }`}
                 style={{
-                  height: `${Math.random() * 100}%`,
+                  height: `${20 + Math.random() * 80}%`, // Ensure a minimum height for visibility
                   animationDelay: `${i * 50}ms`,
                 }}
               />
@@ -109,6 +88,7 @@ const VoiceMessageCard = ({ message }: { message: VoiceMessage }) => {
         ref={audioRef}
         src={message.audioUrl}
         onEnded={() => setIsPlaying(false)}
+        preload="metadata"
       />
     </div>
   );
@@ -137,9 +117,8 @@ const VoiceMessagesSection = () => {
           ))}
         </div>
 
-        {/* Hint */}
         <p className="text-center mt-12 font-elegant text-muted-foreground italic">
-          Add your own voice recordings to make this even more personal
+          More messages coming soon...
         </p>
       </div>
     </section>
