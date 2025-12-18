@@ -19,13 +19,13 @@ const videos: Video[] = [
     id: 2,
     title: 'ከ exam መልስ',
     description: 'Every journey is better with you by my side',
-    videoUrl: '/videos/2.mp4', // Points to public/videos/2.mp4
+    videoUrl: '/videos/video_2025-12-16_22-16-17.mp4', // Points to public/videos/2.mp4
  },
   {
     id: 3,
     title: 'የፍቅር መግልጫ - may be laysera yichilal', 
     description: 'Our love story told through cherished videos',
-    videoUrl: '/videos/3.mp4', // Points to public/videos/3.mp4
+    videoUrl: '/videos/video_2025-12-16_22-16-33.mp4', // Points to public/videos/3.mp4
   },
   
 ];
