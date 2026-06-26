@@ -2,7 +2,7 @@ import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
 import LoveLetterSection from '@/components/LoveLetterSection';
 import PhotoGallerySection from '@/components/PhotoGallerySection';
-import VideoMemoriesSection from '@/components/VideoMemoriesSection';
+import VideoMemoriesSection from '@/components/PoemSection';
 import VoiceMessagesSection from '@/components/VoiceMessagesSection';
 import MusicSection from '@/components/MusicSection';
 import FooterSection from '@/components/FooterSection';

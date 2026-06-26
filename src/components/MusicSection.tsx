@@ -13,23 +13,23 @@ interface Song {
 const songs: Song[] = [
    {
     id: 1,
-    title: 'ሳልጥል ዳስ',
-    artist: ' ማስተዋል እያዩ',
+    title: ' አሜን',
+    artist: 'ነዋይ ደበበ',
     memory: " makes me think of the moment how you came in to my life.",
     audioSrc: '/audio/3.mp3', // Pointing to public/audio/2.mp3
   },
   {
     id: 2,
-    title: 'ስወድሽ',
-    artist: 'ሚካኤል በላይነህ',
+    title: 'የፍቅር እመቤት',
+    artist: 'ነዋይ ደበበ',
     memory: 'The song that express my feelings for you.',
     audioSrc: '/audio/1.mp3', // Pointing to public/audio/1.mp3
   },
 
   {
     id: 3,
-    title: 'ሲያምሽ ያመኛል',
-    artist: 'ጎሳዬ ተስፋዬ',
+    title: ' ጠይም',
+    artist: 'ሚካኤል በላይነህ',
     memory: 'ጋበዝኩሽ',
    audioSrc: '/audio/4.mp3', // Pointing to public/audio/4.mp3
     

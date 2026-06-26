@@ -10,8 +10,9 @@ const LoveLetterSection = () => {
         {/* Section header */}
         <div className="text-center mb-16">
           <Feather className="w-8 h-8 text-rose-gold mx-auto mb-4 animate-float-slow" />
-          <h2 className="font-script text-5xl md:text-6xl text-gradient-gold mb-4">
-            የኔእናት
+          {/* Using a rich, romantic serif font setup for Kalkidane */}
+          <h2 className="font-serif tracking-wide text-5xl md:text-6xl text-gradient-gold mb-4 font-medium">
+            kalkidane
           </h2>
           <div className="w-32 h-px bg-gradient-to-r from-transparent via-rose-gold to-transparent mx-auto" />
         </div>
@@ -24,41 +25,23 @@ const LoveLetterSection = () => {
           <div className="absolute bottom-4 left-4 w-8 h-8 border-l-2 border-b-2 border-rose-gold/30 rounded-bl-lg" />
           <div className="absolute bottom-4 right-4 w-8 h-8 border-r-2 border-b-2 border-rose-gold/30 rounded-br-lg" />
 
-          <div className="font-body text-lg md:text-xl leading-relaxed text-foreground/90 space-y-6">
-            <p className="first-letter:text-5xl first-letter:font-script first-letter:text-rose-gold first-letter:float-left first-letter:mr-3 first-letter:mt-1">
-              From the moment I saw you, I knew my life would never be the same. 
-              You walked into my world like a gentle breeze, and suddenly everything 
-              made sense. Every song became about you, every sunset reminded me of 
-              your smile, and every star in the sky seemed to spell your name.
+          {/* Using a highly readable font-sans stack ideal for clean Amharic and modern text layout */}
+          <div className="font-sans text-lg md:text-xl leading-relaxed text-foreground/90 space-y-6 tracking-normal">
+            <p className="first-letter:text-6xl first-letter:font-serif first-letter:text-rose-gold first-letter:float-left first-letter:mr-3 first-letter:mt-1 first-letter:font-bold">
+              አንቺ በህይወቴ ውስጥ በመኖርሽ እና ይቺ ቀን የተወለድሽባት ቀን ስለሆነች ዛሬ ያለ ምንም ጥርጥር በዓመቱ ውስጥ የእኔ ተወዳጅ ቀን ነናት። ከአንቺ በፊት ህይወቴ ምን ይመስል እንደነበር እና ዛሬ የት እንዳለሁ መለስ ብዬ ስመለከት፣ በአንቺ መኖር እጅግ በጣም አመስጋኝ ነኝ። መክኒያቱም ኮስተር ያለውን የወንድነት ዓለሜን በሴትነት ጥበብሽ አለዝበሽ ወደልጅነት ሰላሜ ምመለሰው ባንቺ ፍቅር በኩል ነው.....kalkidane🥰  አንቺ በዙሪያሽ ያለውን ነገር ሁሉ ልዩ ውበት መስጠት፣ ደግነትን መሙላት እና እቺን አሰልቺ ዓለም  አጓጊ ማድረግ ከአምላክሽ የተቀበልሻቸው መክሊቶችሽ ናቸው። እኔንም ባንቺ በኩል ፈጣሪዬን አመስጋኝ አድርገሺኛል።
             </p>
 
             <p>
-              You are my sunshine on cloudy days, my comfort in times of doubt, 
-              and my greatest adventure. With you, I have found a love that I 
-              never knew existed — a love that is patient, kind, and unconditional. 
-              You make me want to be a better person, every single day.
+              የኔ ንፁ ሴት ይህን አዲስ የህይወትሽ ዓመት ስትጀምሪ፣ ህይወትን እስከጥጓ እንድትኖሪያት እመኛለው ይህ ቀረኝ ማትይበት ዓመት ያድርግልሽ።
+              እና ይህንን ሁልጊዜ አስታውሺ ጉዞሽ ወደ የትኛውም ቦታ ቢወስድሽ፣ ወይም ማዕበሉ ምንም ያህል ቢበረታ፣ ብቻሽን አትታገዪውም  እኔ ሁሌ ከጎንሽ አለሁ። እኔ ለረጅም ጉዞ አብሬሽ ነኝ—ታላላቅ ድሎችሽን ለማክበር፣ በጸጥታና በጥርጣሬዎችሽም ውስጥ እጅሽን ለመያዝ፣ እና በሁሉም ነገር ውስጥ አንቺን ለመውደድ ሁሌ ዝግጁ ነኝ። ትከሻዬ ሁልጊዜም ያንቺ ማረፈያ ነው።
+              ሰላሜ፣ ደስታዬ እና ታላቋ ታሪኬ ስለሆንሽ አመሰግናለሁ።
             </p>
-
-            <p>
-              I cherish every moment we spend together, from our late-night 
-              conversations to our quiet mornings. The way you laugh, the way 
-              you care, the way you look at me — these are the things I treasure 
-              most in this world. You are not just my partner; you are my best 
-              friend, my confidant, and my home.
-            </p>
-
-            <p>
-              Thank you for loving me, for believing in me, and for being you. 
-              I promise to spend every day showing you how much you mean to me. 
-              My heart is yours, now and forever. I love you more than words 
-              could ever express, but I will never stop trying.
-            </p>
-
-            <p className="text-right font-elegant text-xl italic text-rose-gold mt-8">
-              Forever Yours,<br />
-              <span className="font-script text-3xl">With All My Love</span><br />
-              <span className="font-script text-3xl">ሳሬም</span>
-              
+            
+            {/* Elegant italicized closing style */}
+            <p className="text-right font-serif text-xl md:text-2xl italic text-rose-gold mt-8 tracking-wide font-medium">
+              መልካም ልደት katalina🥰,<br />
+              {/* <span className="font-serif text-3xl block mt-2">With All My Love</span>
+              <span className="font-serif text-3xl">Nathan</span> */}
             </p>
           </div>
 

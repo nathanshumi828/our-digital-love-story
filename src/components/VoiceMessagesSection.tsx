@@ -12,11 +12,18 @@ interface VoiceMessage {
 const voiceMessages: VoiceMessage[] = [
   {
     id: 1,
-    title: 'ናፍቆት ትረካ',
-    description: 'A sweet message to start your day',
-    duration: '6:12',
+    title: 'Sakilgn',
+    description: '4ተኛ አመት እያለው ማላውቀው ስሜት አንቺን አንቺን ሲለኝ።infoken ብሄድ አገኛት ይሆን....እንዲእንደማስብ እኮግን አታቅም ብዬ እያሰብኩ የፃፍኳት ግጥም ነች☺️',
+    duration: '2:22',
     audioUrl: '/audio/5.mp3', // Add your audio URL here
   },
+  {
+    id: 2,
+    title: 'Ekenalew',
+    description: 'Apparent እያለው ስሜቴ ፍቅር መሆን ሲጀምር ሳልነግራት አንዱ ይወስድብኝ ይሆን የሚል ሀሳብ ሲፀናወተኝ የፃፍኳት ግጥም ናት😂',
+    duration: '2:10',
+    audioUrl: '/audio/6.mp3', // Add your audio URL here
+  }
 ];
 
 const VoiceMessageCard = ({ message }: { message: VoiceMessage }) => {
@@ -117,9 +124,6 @@ const VoiceMessagesSection = () => {
           ))}
         </div>
 
-        <p className="text-center mt-12 font-elegant text-muted-foreground italic">
-          More messages coming soon...
-        </p>
       </div>
     </section>
   );

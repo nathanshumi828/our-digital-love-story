@@ -25,15 +25,17 @@ const HeroSection = () => {
       </div>
 
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
-        {/* Main heading */}
+        {/* Main heading label */}
         <div className="mb-6 animate-fade-in-up">
-          <span className="text-lg md:text-xl font-elegant text-muted-foreground tracking-widest uppercase">
-            Happy anniversary
+          <span className="text-sm md:text-base font-sans font-medium text-muted-foreground tracking-[0.2em] uppercase">
+            To My Favorite Person
           </span>
         </div>
 
-        <h1 className="font-script text-6xl md:text-8xl lg:text-9xl text-gradient-gold mb-8 animate-fade-in-up delay-200">
-          For You, My Love
+        {/* UPDATED TEXT & STYLING: Premium, elegant title dedicated to her birthday */}
+        <h1 className="font-serif tracking-tight font-normal text-5xl md:text-7xl lg:text-8xl text-gradient-gold mb-8 animate-fade-in-up delay-200 leading-tight">
+          Happy Birthday, <br />
+          <span className="italic font-light">Kalkidane</span>
         </h1>
 
         {/* Animated heart */}
@@ -41,9 +43,9 @@ const HeroSection = () => {
           <Heart className="w-12 h-12 text-rose-gold fill-rose-gold animate-heart-beat" />
         </div>
 
-        <p className="font-elegant text-xl md:text-2xl text-foreground/80 max-w-2xl mx-auto mb-12 animate-fade-in-up delay-300 leading-relaxed">
-          Every moment with you is a treasure. This is my gift to you — 
-          a place where our love lives forever.
+        {/* UPDATED TEXT: A deeply intimate, poetic quote that sets up the gift context */}
+        <p className="font-serif italic text-lg md:text-xl text-foreground/85 max-w-2xl mx-auto mb-12 animate-fade-in-up delay-300 leading-relaxed antialiased">
+          "Of all the days in the year, this one is my favorite—because it’s the day the world became more beautiful. This is my digital token for you, a place where our story lives forever."
         </p>
 
         {/* Scroll indicator */}
@@ -52,7 +54,7 @@ const HeroSection = () => {
           className="animate-fade-in delay-700 group"
         >
           <div className="flex flex-col items-center gap-2 text-muted-foreground hover:text-primary transition-colors">
-            <span className="font-elegant text-sm tracking-wider">Begin Our Story</span>
+            <span className="font-sans text-xs md:text-sm tracking-[0.25em] uppercase font-medium">Read My Heart</span>
             <ChevronDown className="w-6 h-6 animate-float-slow" />
           </div>
         </button>

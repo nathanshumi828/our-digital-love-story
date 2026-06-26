@@ -12,29 +12,35 @@ const FooterSection = () => {
         {/* Final message */}
         <div className="mb-12">
           <Heart className="w-10 h-10 text-rose-gold fill-rose-gold mx-auto mb-6 animate-heart-beat" />
-          <p className="font-script text-4xl md:text-5xl text-gradient-gold mb-4">
-            I Love You
+          
+          {/* CHANGED: font-script to font-serif, with deep romantic quote style */}
+          <p className="font-serif italic text-3xl md:text-4xl text-gradient-gold mb-4">
+            "እወድሻለሁ የኔ አለም"
           </p>
-          <p className="font-elegant text-xl text-foreground/80 max-w-lg mx-auto leading-relaxed">
+          
+          {/* CHANGED: font-elegant to font-serif, updated text to match birthday theme seamlessly */}
+          <p className="font-serif text-lg md:text-xl text-foreground/85 max-w-lg mx-auto leading-relaxed antialiased">
             Today, tomorrow, and every day after. You are my forever, my always, 
-            and everything in between.
+            and everything in between. Happy Birthday, Kalkidane.
           </p>
         </div>
 
         {/* Decorative divider */}
         <div className="flex items-center justify-center gap-4 mb-8">
-          <div className="w-16 h-px bg-border" />
-          <Heart className="w-4 h-4 text-rose-gold/50" />
-          <div className="w-16 h-px bg-border" />
+          <div className="w-16 h-px bg-border/40" />
+          <Heart className="w-4 h-4 text-rose-gold/50 fill-rose-gold/20" />
+          <div className="w-16 h-px bg-border/40" />
         </div>
 
         {/* Footer note */}
-        <p className="font-body text-sm text-muted-foreground">
+        {/* CHANGED: font-body to font-sans tracking-wide for structured metadata styling */}
+        <p className="font-sans text-xs md:text-sm text-muted-foreground tracking-wider uppercase font-medium">
           Made with{' '}
-          <Heart className="w-3 h-3 inline text-rose-gold fill-rose-gold" />{' '}
-          ላንቺ
+          <Heart className="w-3 h-3 inline mx-0.5 text-rose-gold fill-rose-gold animate-pulse-soft" />{' '}
+          ላንቺ ብቻ 🥰
         </p>
-        <p className="font-body text-xs text-muted-foreground/60 mt-2">
+        
+        <p className="font-sans text-[10px] md:text-xs text-muted-foreground/60 tracking-widest uppercase mt-3">
           © {currentYear} — Our Love Story
         </p>
       </div>
