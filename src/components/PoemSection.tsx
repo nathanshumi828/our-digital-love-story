@@ -32,14 +32,14 @@ const PoemSection = () => {
             {/* Stanza 1 */}
             <div className="text-center space-y-4 md:space-y-5">
               <p className="font-serif text-lg md:text-xl lg:text-2xl text-foreground/90 leading-relaxed tracking-wide antialiased">
-                ነፍሴን ፈሪ አርጓት የሰው መቅረብ ድኩም <br />
-                ለዕውር ምንምነች ፀሀይ ወጣች ቢሉም <br />
-                ለኔስ ምን ሊረባኝ ከተስፋሽ መዋሉ <br />
-                እድሜ ቢገረጅፍ በመወደድ ዘመን ህፃን እያከሉ <br />
-                ፍቃዴም ክልክሌም ከ'ሳት እንደመቅረብ <br />
-                ካምላክ ፍርድ ማግስት መዳን እንደማሰብ <br />
-                መጓዜም 'ሚያቀርበኝ እስከ ቃልሽ እክል <br />
-                አንቺ ለኔ እንዲያ ነሽ የታጠረች ተክል።
+                ነፍሴን ፈሪ አርጓት የሰው መቅረብ ድኩም<br/>
+ለዕውር ምንምነች ፀሀይ ወጣች ቢሉም<br/>
+ለኔስ ምን ሊረባኝ ከተስፋሽ መዋሉ<br/>
+እድሜ ቢገረጅፍ በመወደድ ዘመን ህፃን እያከሉ<br/>
+ፍቃዴም ክልክሌም ከ'ሳት እንደመቅረብ<br/>
+ካምላክ ፍርድ ማግስት መዳን እንደማሰብ<br/>
+መጓዜም 'ሚያቀርበኝ እስከ ቃልሽ እክል<br/>
+አንቺ ለኔ እንዲያ ነሽ የታጠረች ተክል።
               </p>
             </div>
 
@@ -55,11 +55,11 @@ const PoemSection = () => {
 
             {/* Stanza 2 */}
             <div className="text-center space-y-4 md:space-y-5">
-              <p className="font-serif font-medium text-xl md:text-2xl lg:text-3xl text-gradient-gold leading-relaxed tracking-wide antialiased">
-                መጥኔ ለሞኛሞኝ ጎምዥቶ ለቀረ <br />
-                ካንቺጋ ነገውን ማሰብ ለጀመረ። <br />
-                እኔስ አገኘሁሽ ለደስታ ሲሰራኝ <br />
-                አንቺ ላመለጥሺው ለህዝበ አዳም ይብላኝ።
+              <p className="font-serif font-medium text-xl md:text-2xl lg:text-3xl text-gradient-gold leading-relaxed tracking-wide antialiased">     
+መጥኔ ለሞኛሞኝ ጎምዥቶ ለቀረ<br />
+የኔ ብቶን ብሎ ማሰብ ለጀመረ።<br />
+እኔስ አገኘሁሽ ለደስታ ሲሰራኝ<br />
+አንቺ ላመለጥሺው ለህዝበ አዳም ይብላኝ።
               </p>
             </div>
 
