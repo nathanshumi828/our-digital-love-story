@@ -13,7 +13,7 @@ interface Song {
 const songs: Song[] = [
    {
     id: 1,
-    title: ' ዝጽዳል',
+    title: ' ዝጸዳል',
     artist: 'ቴዲ አፍሮ',
     memory: " makes me think of the moment how you came in to my life.",
     audioSrc: '/audio/2.mp3', 
