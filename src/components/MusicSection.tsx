@@ -16,7 +16,7 @@ const songs: Song[] = [
     title: ' ዝጸዳል',
     artist: 'ቴዲ አፍሮ',
     memory: " makes me think of the moment how you came in to my life.",
-    audioSrc: '/audio/.mp3', 
+    audioSrc: '/audio/2.mp3', 
   },
   {
     id: 2,
